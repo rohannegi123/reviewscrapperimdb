@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en" >
+
+<head>
+  <meta charset="UTF-8">
+  <title>Review Page</title>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+      <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+
+</head>
+
+<body>
+
+<div class="show-info">
+   <div class="showinfo">Storyline = {{show_info}} <small </div>
+
+  <div class="table-users">
+   <div class="header">Top voted reviews of {{variable}}{{variable2}} <img itemprop="image" class="poster" height="100" width="80" src={{poster}}>
+</div>
+
+
+
+
+
+   <table cellspacing="0">
+       <tr>
+
+         <th><u><b>Date of rating</u></th>
+         <th><u><b></b>Name<u/></th>
+         <th><u><b></b>Rating</u></th>
+         <th><u><b>Comment Heading</u></th>
+         <th width="600"><u><b>Comments</u></th>
+
+
+         {% for review in reviews %}
+      <tr>
+          <td>{{review['Date']}}</td>
+         <td>{{review['Name']}}</td>
+         <td>{{review['Rating']}}</td>
+         <td>{{review['CommentHead']}}</td>
+         <td>{{review['Comment']}} </td>
+       {% endfor %}
+
+
+   </table>
+
+
+
+
+
+
+</body>
+
+</html>

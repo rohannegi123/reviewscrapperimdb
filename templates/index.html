@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block head %}
+
+<title>Search Page</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+
+{% endblock %}
+
+{% block body %}
+<div class="content">
+        <h1 style="text-align: center">You can find top highest voted reviews of any series or movies here. </h1>
+
+    <img src="https://help.autovitals.com/wp-content/uploads/2018/01/online-reviews.jpg" style="max-width:none;max-height:none;width:60%;height:80;margin-left:50%;-webkit-transform:translateX(-50%);-moz-transform:translateX(-50%);-ms-transform:translateX(-50%);-o-transform:translateX(-50%);transform:translateX(-50%)">
+    <h1 style="text-align: center">Enter show name .</h1>
+
+    <div class="form">
+        <form action="/showlist" method="POST">
+            <input type="text" name="content" id="content">
+            <input type="submit" value="Search">
+
+        </form>
+    </div>
+</div>
+{% endblock %}

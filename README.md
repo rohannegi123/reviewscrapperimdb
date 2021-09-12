@@ -7,3 +7,6 @@ Web scraping is the process of using bots to extract content and data from a web
 What does this app does?
 The app extracts the reviews(which have highest votes given by the users) of any shows and movies from imdb
 
+
+Cloud used in this project for storing the reviews is mongodb .
+

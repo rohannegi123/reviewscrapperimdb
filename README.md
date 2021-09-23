@@ -6,7 +6,7 @@ Web scraping is the process of using bots to extract content and data from a web
 In this project, I have developed an api which extracts data from imdb website. You can get the data of higest voted reviews of any shows or movies from the project.
 
 
-# The following steps have been used to build the web scraping project using Python and its ecosystem of libraries:
+# The following steps has been used to build the web scraping project using Python and its ecosystem of libraries:
 
 * Pick a website
  I have picked imdb website for scraping the reviews of the shows
@@ -23,3 +23,6 @@ In this project, I have developed an api which extracts data from imdb website. 
 * Deploy the app in cloud platforms.
   I have used Heroku
 
+
+# Project deployed in heroku
+https://reviewscrapperimdb.herokuapp.com/

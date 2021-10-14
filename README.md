@@ -6,7 +6,7 @@ Web scraping is the process of using bots to extract content and data from a web
 * Market research companies using scrapers to pull data from forums and social media (e.g., for sentiment analysis).
 
 # Introduction
-In this project, I have developed an api which extracts data from imdb website. You can get the data of higest voted reviews of any shows or movies from the project.
+In this project, I have developed an api which extracts data from imdb website. You can get the data of higest voted reviews of any shows or movies .
 
 
 # The following steps has been used to build the web scraping project using Python and its ecosystem of libraries:
